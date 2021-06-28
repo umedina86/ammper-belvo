@@ -23,7 +23,7 @@ const Accounts = () => {
             </div>
             <div className="row m-2 pb-1">
                 <div className="col-sm">
-                <table className="table">
+                <table className="table table-responsive">
                 <thead className="thead-dark">
                     <tr>
                     <th scope="col">#</th>

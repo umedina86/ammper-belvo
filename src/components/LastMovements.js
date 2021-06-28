@@ -23,8 +23,8 @@ const LastMovements = () => {
             </div>
             <div className="row m-2 pb-1">
                 <div className="col-sm">
-                <table className="table">
-                <thead className="thead-dark">
+                <table className="table table-responsive">
+                <thead className="thead-dark ">
                     <tr>
                     <th scope="col">#Ref</th>
                     <th scope="col">Cuenta</th>
