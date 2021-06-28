@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-import {getLastMovements} from '../api/getLastMovements'
+import { getDataBelvo } from '../api/getDataBelvo'
 
 const LastMovements = () => {
     const [movements, setMovements] = useState({});
 
     const infoMovements = async(e) => {
         if (Object.keys(movements).length === 0) {
-            const data =await getLastMovements();
+            const data =await getDataBelvo('/api/transactions/');
             setMovements(data.results);
         }
     }

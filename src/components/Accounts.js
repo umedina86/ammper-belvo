@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-import { getAccounts } from '../api/getAccounts'
+import { getDataBelvo } from '../api/getDataBelvo'
 
 const Accounts = () => {
     const [accounts, setAccounts] = useState({});
 
     const infoAccounts = async(e) => {
         if (Object.keys(accounts).length === 0) {
-            const data =await getAccounts();
+            const data =await getDataBelvo('/api/accounts/');
             setAccounts(data.results);
         }
     }
